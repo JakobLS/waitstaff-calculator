@@ -7,7 +7,6 @@ function isNumeric(n) {
     return !isNaN(parseFloat(n)) && isFinite(n) && n >= 0;
 }
 
-
 // Function for validating input details
 function validateMealDetails(price, tax, tip) {
     if (!isNumeric(price)) {
@@ -21,7 +20,6 @@ function validateMealDetails(price, tax, tip) {
     };
 }
 
-
 // Function for creating a meal
 function createMeal(mealPrice, mealTax, mealTip) {
     return {id: cuid(),
@@ -32,15 +30,8 @@ function createMeal(mealPrice, mealTax, mealTip) {
 
 
 
-
-
 export default {
     validateMealDetails,
     createMeal
 }
-
-
-
-
-
 

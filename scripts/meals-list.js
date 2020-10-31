@@ -14,18 +14,15 @@ function addMealToList(mealPrice, taxRate, tipPercentage) {
     store.meals.push(newMeal);
 }
 
-
 function calculateSubTotal(meal) {
     return parseFloat((meal.price * (1 + meal.tax/100)).toFixed(2));
     //return Math.round((meal.price * (1 + meal.tax/100)) * 100) / 100;
 }
 
-
 function calculateTip(meal) {
     const subTotal = calculateSubTotal(meal);
     return parseFloat((subTotal * meal.tip/100).toFixed(2));
 }
-
 
 function generateCustomerChargesElement(meal) {
     // Function for generating the customer charges html element
@@ -37,7 +34,6 @@ function generateCustomerChargesElement(meal) {
             <p class="bold">${total}€</p>`;
 }
 
-
 function calculateTotalTip() {
     // Function for calculating total tip on all meals
     let totalTip = 0;
@@ -48,17 +44,14 @@ function calculateTotalTip() {
     return parseFloat(totalTip.toFixed(2));
 }
 
-
 function calculateTotalMealCount() {
     // Function for calculating the total amount of meals
     return store.meals.length;
 }
 
-
 function calculateAverageTip() {
     return parseFloat((calculateTotalTip() / calculateTotalMealCount()).toFixed(2));
 }
-
 
 function generateMyEarningsInfoElement() {
     // Function for generating the earnings info html element
@@ -69,7 +62,6 @@ function generateMyEarningsInfoElement() {
             <p>${mealCount}</p>
             <p>${averageTip}€</p>`;
 }
-
 
 // Function for rendering the DOM
 function render() {
@@ -89,7 +81,6 @@ function render() {
     };
 }
 
-
 // Function for handling when the Submit button is clicked. 
 function handleSubmitClicked() {
     $('#js-meals-list-submit').submit(function (event) {
@@ -105,7 +96,6 @@ function handleSubmitClicked() {
     });
 }
 
-
 // Functionality for when the Reset button is clicked. 
 function handleResetClicked() {
     $('.js-reset-btn').on('click', event => {
@@ -117,13 +107,10 @@ function handleResetClicked() {
 
 
 
-
-
 function bindEventListeners() {
     handleSubmitClicked();
     handleResetClicked();
 }
-
 
 
 

@@ -1,6 +1,6 @@
 'use-strict';
 
-
+// Import statement
 import mealsList from "./meals-list.js";
 
 
