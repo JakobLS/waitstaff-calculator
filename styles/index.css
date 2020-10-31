@@ -1,0 +1,184 @@
+
+
+
+/* General styles with global effect */
+
+.full-frame {
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+p, h1, h2, form label, form input {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    border-bottom: 2px solid black;
+    margin-top: 1.5vh;
+    padding-bottom: 1vh;
+}
+
+
+.centered-text {
+    text-align: center;
+}
+
+.border {
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+
+.btn {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 6px;
+    color: white;
+    background-color: black;
+    border: 0;
+    padding: 1.2vh 3vw;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.btnS {
+    padding: .6vh 1vw;
+}
+
+
+
+
+/* Styles applied to the heading area */
+
+.heading-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+}
+
+
+
+/* Styles used on the center area */
+
+
+
+.center-area {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 70vh;
+    padding: 0 10vw;
+}
+
+.right-center {
+    display:flex;
+    flex-direction: column;
+}
+
+.left-center, .meal-details, .inputs, .buttons {
+    width: 35vw;
+}
+
+.inputs, .buttons {
+    height: 30vh
+}
+
+.inputsL, .inputsR {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25vh;
+}
+
+.inputsR {
+    padding-left: 1vw;
+}
+
+.buttons, .inputs {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Add space between buttons (but only BETWEEN buttons!) */
+.btnS + .btnS {
+    margin-left: 2%;
+}
+
+
+form input {
+    margin-right: 30px;
+    width: 34px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/*  More space to enter the Base Meal Price */
+form input[name="price"] {
+    width: 100px;
+}
+
+.top, .bottom {
+    width: 30vw;
+    height: 35vh;
+}
+
+.top {
+    margin-bottom: 2.5vh;
+}
+
+.bottom {
+    margin-top: 2.5vh;
+}
+
+
+.flexR {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.earningsL, .chargesL {
+    width: 25vh;
+}
+
+.earningsR, .chargesR {
+    width: 7vh;
+}
+
+
+
+
+/* Styles applied to the bottom reset button area */
+
+.reset-area {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 10vh;
+    padding-left: 4vw;
+}
+
+
+
+
+
+
+
+
