@@ -16,7 +16,6 @@ function addMealToList(mealPrice, taxRate, tipPercentage) {
 
 function calculateSubTotal(meal) {
     return parseFloat((meal.price * (1 + meal.tax/100)).toFixed(2));
-    //return Math.round((meal.price * (1 + meal.tax/100)) * 100) / 100;
 }
 
 function calculateTip(meal) {
